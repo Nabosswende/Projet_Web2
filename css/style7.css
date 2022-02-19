@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+/****************** TOUTE LA PAGE ******************************/
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color:#FF8800;
+}
+/****************** Entête *************************************/
+header{
+  background-color: #4285F4;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+h1{
+  margin: 0 20px;
+  line-height: 60px;
+  color: white;
+  font-size: 30px;
+}
+/****************** section menu *************************************/
+section#menu{
+  background-color: #9E9E9E;
+  position: fixed;
+  width: 15%;
+  height: 100%;
+  top: 70px;
+  z-index: -1;
+}
+section#menu ul li{
+  list-style: none;
+  padding: 8px;
+}
+section#menu ul li a{
+  text-decoration: none;
+  color: black;
+}
+section#menu ul li:nth-of-type(2n+1){
+  background-color: white;
+}
+/****************** section post *************************************/
+section#post{
+  position: relative;
+  top: 90px;
+}
+section#post figure{
+  width: min-content;
+  margin: 0 auto 1em;
+  background-color: #EFEFEF;
+  border: 1px solid rgba(0,0,0,0.1);
+  text-align: justify;
+  padding: 1em;
+}
+section#post figure img{
+   width: 600px;
+}
+section#post figure span.Publiee{
+  background-color: blue;
+  color: white;
+}
+section#post figure span#impression span{
+  margin-left: 100px;
+}
+section#post figure img:hover{
+  transform: scale(1.1);
+}
+/****************** section contact *************************************/
+section#contact{
+  margin-left:80%;
+  position: fixed;;
+  top: 70px;
+  background-color: #9E9E9E;
+  height: 100%;
+  width: 400px;
+  font-size: 2em;
+  z-index: -1;
+}
+section#contact tr th a{
+  color: white;
+  text-decoration: none;
+}
+section#contact tr th{
+  background-color: green;
+  width: 400px;
+  text-align: left;
+  font-size: 2em;
+}
+section#contact tr td a{
+  text-decoration: none;
+   color: blue;
+}
+section#contact tr td{
+  padding: 20px;
+  color: blue;
+}
+section#contact tr:nth-of-type(2n){
+  background-color: white;
+}
+section#contact tr:nth-of-type(2n) > td::after{
+  content: "(en ligne)"
+}
+section#contact tr:nth-of-type(2n+1) > td::after{
+  content: "(déconnecté)"
+}
+/****************** bas de page ************************/
+footer{
+  margin-top: 120px;
+  background-color: #4285F4;
+  color:white;
+  text-align: center;
+  height: 300px;
+}
+
+
+
+
+
+
